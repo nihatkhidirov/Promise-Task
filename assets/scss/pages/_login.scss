@@ -1,0 +1,51 @@
+@import "../mixins";
+.login {
+  padding: 140px;
+  .container {
+    .row {
+      justify-content: center;
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .formController {
+          position: relative;
+          &.error {
+            label {
+              color: #ff000080;
+            }
+            input {
+              border-bottom: 1px solid red;
+            }
+          }
+          label {
+            position: absolute;
+            color: #00000050;
+            top: 10px;
+            left: 6px;
+            z-index: -1;
+            transition: all 0.15s ease;
+            font-size: 14px;
+            &.active {
+              top: -14px;
+              left: 0px;
+              font-size: 16px;
+            }
+          }
+          input {
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            border-bottom: 1px solid $secondary-color;
+            outline: none;
+            padding: 8px 4px;
+            margin-bottom: 5px;
+          }
+        }
+        button {
+          @include primaryBtn();
+        }
+      }
+    }
+  }
+}

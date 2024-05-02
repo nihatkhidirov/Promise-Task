@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/scss/index.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <main>
+      <section class="signup">
+        <div class="container">
+          <div class="row">
+            <form class="form">
+              <div class="formController">
+                <label for="username" id="usernameLabel"> Username </label>
+                <input type="text" id="username" />
+              </div>
+              <div class="formController">
+                <label for="password" id="passwordLabel"> Password </label>
+                <input type="password" id="password" />
+              </div>
+              <div class="formController">
+                <label for="confirmPassword" id="confirmPasswordLabel">
+                  Confirm Password
+                </label>
+                <input type="password" id="confirmPassword" />
+              </div>
+              <button type="submit">Sign up</button>
+              <p>
+                Already have an account? Sign in
+                <a href="./signin.html">here</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/signup.js"></script>
+  </body>
+</html>

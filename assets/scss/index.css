@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.login {
+  padding: 140px;
+}
+.login .container .row {
+  justify-content: center;
+}
+.login .container .row .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login .container .row .form .formController {
+  position: relative;
+}
+.login .container .row .form .formController.error label {
+  color: rgba(255, 0, 0, 0.5019607843);
+}
+.login .container .row .form .formController.error input {
+  border-bottom: 1px solid red;
+}
+.login .container .row .form .formController label {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.3137254902);
+  top: 10px;
+  left: 6px;
+  z-index: -1;
+  transition: all 0.15s ease;
+  font-size: 14px;
+}
+.login .container .row .form .formController label.active {
+  top: -14px;
+  left: 0px;
+  font-size: 16px;
+}
+.login .container .row .form .formController input {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid #325789;
+  outline: none;
+  padding: 8px 4px;
+  margin-bottom: 5px;
+}
+.login .container .row .form button {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 15px auto;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #325789;
+  transition: all 0.15s ease;
+}
+.login .container .row .form button:hover {
+  transform: scale(1.05);
+}
+.login .container .row .form button:active {
+  transform: scale(0.95);
+}
+
+.signup {
+  padding: 140px;
+}
+.signup .container .row {
+  justify-content: center;
+}
+.signup .container .row .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.signup .container .row .form .formController {
+  position: relative;
+}
+.signup .container .row .form .formController.error label {
+  color: rgba(255, 0, 0, 0.5019607843);
+}
+.signup .container .row .form .formController.error input {
+  border-bottom: 1px solid red;
+}
+.signup .container .row .form .formController label {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.3137254902);
+  top: 10px;
+  left: 6px;
+  z-index: -1;
+  transition: all 0.15s ease;
+  font-size: 14px;
+}
+.signup .container .row .form .formController label.active {
+  top: -14px;
+  left: 0px;
+  font-size: 16px;
+}
+.signup .container .row .form .formController input {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px solid #325789;
+  outline: none;
+  padding: 8px 4px;
+  margin-bottom: 5px;
+}
+.signup .container .row .form button {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 15px auto;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #325789;
+  transition: all 0.15s ease;
+}
+.signup .container .row .form button:hover {
+  transform: scale(1.05);
+}
+.signup .container .row .form button:active {
+  transform: scale(0.95);
+}
+
+.hero .container .row .btn {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 15px auto;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #325789;
+  transition: all 0.15s ease;
+}
+.hero .container .row .btn:hover {
+  transform: scale(1.05);
+}
+.hero .container .row .btn:active {
+  transform: scale(0.95);
+}/*# sourceMappingURL=index.css.map */
